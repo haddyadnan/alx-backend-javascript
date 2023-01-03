@@ -1,8 +1,8 @@
 export default function cleanSet(set, startString) {
-  let str = '';
   if (startString === '') {
     return '';
   }
+  let str = '';
   for (const item of set) {
     if (item.startsWith(startString)) {
       str += item.replace(startString, '-');
